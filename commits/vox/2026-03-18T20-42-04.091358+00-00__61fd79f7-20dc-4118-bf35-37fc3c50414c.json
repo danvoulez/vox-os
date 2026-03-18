@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T20:47:07.004Z",
+  "exported_at": "2026-03-18T21:09:35.971Z",
   "character": {
     "id": "f8b24852-60b5-4ef0-aa34-daa4caafc691",
     "slug": "vox",
@@ -17,7 +17,7 @@
       "snapshot_title": "Vox v1 - Primeira Instancia Canonica"
     },
     "source_review_id": "0d947b5c-a8b0-4daf-8140-f3e97b634281",
-    "authored_by": null,
+    "authored_by": "3facdaca-3cef-488e-9a0b-b8ca8639ce8e",
     "created_at": "2026-03-18T20:42:04.091358+00:00"
   },
   "version": {
@@ -219,7 +219,7 @@
       "bootstrap": true,
       "autonomy_level": 1
     },
-    "created_by": null,
+    "created_by": "3facdaca-3cef-488e-9a0b-b8ca8639ce8e",
     "created_at": "2026-03-18T20:42:04.091358+00:00"
   }
 }
