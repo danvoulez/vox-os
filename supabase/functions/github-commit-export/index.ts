@@ -12,6 +12,23 @@ async function putGithubFile(input: {
   content: string;
   message: string;
 }) {
+  const existing = await fetch(`https://api.github.com/repos/${input.owner}/${input.repo}/contents/${input.path}`, {
+    headers: {
+      Authorization: `Bearer ${input.token}`,
+      Accept: "application/vnd.github+json",
+    },
+  });
+
+  let sha: string | undefined;
+
+  if (existing.ok) {
+    const payload = await existing.json();
+    sha = payload.sha;
+  } else if (existing.status !== 404) {
+    const payload = await existing.json();
+    throw new Error(`GitHub lookup failed: ${existing.status} ${JSON.stringify(payload)}`);
+  }
+
   const response = await fetch(`https://api.github.com/repos/${input.owner}/${input.repo}/contents/${input.path}`, {
     method: "PUT",
     headers: {
@@ -22,6 +39,7 @@ async function putGithubFile(input: {
     body: JSON.stringify({
       message: input.message,
       content: encodeBase64(input.content),
+      ...(sha ? { sha } : {}),
     }),
   });
 

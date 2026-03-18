@@ -1,12 +1,13 @@
 -- Vox v1 official bootstrap
 -- Run this in Supabase SQL Editor after pushing the base schema migration.
 -- Optionally replace USER_ID with a UUID to override actor attribution.
--- By default, this script auto-resolves dan@logline.world when the user exists in auth.users.
+-- By default, this script auto-resolves dan@danvoulez.com, falling back to dan@logline.world.
 
 do $$
 declare
   v_actor_id uuid := coalesce(
     nullif('USER_ID', 'USER_ID')::uuid,
+    (select id from auth.users where email = 'dan@danvoulez.com' limit 1),
     (select id from auth.users where email = 'dan@logline.world' limit 1)
   );
   v_workspace_id uuid;
