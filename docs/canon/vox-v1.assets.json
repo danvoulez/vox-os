@@ -1,0 +1,113 @@
+{
+  "batch": "vox-v1-curated-2026-03-18",
+  "workspace_slug": "voulezvous",
+  "character_slug": "vox",
+  "bucket": "vox-assets",
+  "assets": [
+    {
+      "local_filename": "6A3DE1A3-ED25-4FC2-93D8-8FFA0FE3A1E1_1_105_c.jpeg",
+      "local_path": "assets/6A3DE1A3-ED25-4FC2-93D8-8FFA0FE3A1E1_1_105_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/images/bastidor-vv/vox-lisbon-cafe-v1.jpeg",
+      "asset_type": "image",
+      "status": "approved",
+      "scene_slug": "bastidor-vv",
+      "width": 613,
+      "height": 1282,
+      "checksum": "097108d25bc3e8f4b50473a6475df99b7351873766333d875c77409605f85314",
+      "tags": ["vox", "portrait", "urban", "lisbon", "pink-cap", "voulezvous-shirt", "bastidor-vv"],
+      "notes": "Strong brand-linked portrait; useful for face, smile, cap, and public-presence canon."
+    },
+    {
+      "local_filename": "CDDB8DD0-4880-422E-A1C1-EE243D4E44D8_4_5005_c.jpeg",
+      "local_path": "assets/CDDB8DD0-4880-422E-A1C1-EE243D4E44D8_4_5005_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/images/lounge-casa/vox-lounge-sofa-01.jpeg",
+      "asset_type": "image",
+      "status": "approved",
+      "scene_slug": "lounge-casa",
+      "width": 400,
+      "height": 360,
+      "checksum": "8aa7c7f467081294df23943680035d42f72177ffc606f411baf01fa0e4dc73e9",
+      "tags": ["vox", "lounge-casa", "interior", "sofa", "voulezvous-shirt"],
+      "notes": "Strong lounge reference with relaxed posture and branded shirt."
+    },
+    {
+      "local_filename": "D94AE285-CC95-46CE-A7DA-816ACB696FC1_4_5005_c.jpeg",
+      "local_path": "assets/D94AE285-CC95-46CE-A7DA-816ACB696FC1_4_5005_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/images/lounge-casa/vox-lounge-sofa-frontal-01.jpeg",
+      "asset_type": "image",
+      "status": "approved",
+      "scene_slug": "lounge-casa",
+      "width": 400,
+      "height": 360,
+      "checksum": "be5cdd76ea9b996c31830c83c0249260a1488595f018ad6489c1e6942c36e329",
+      "tags": ["vox", "lounge-casa", "frontal", "interior", "sofa"],
+      "notes": "Frontal lounge reference with clear face and mood."
+    },
+    {
+      "local_filename": "E4588043-5ED5-458F-BE36-A260C24A89D9_4_5005_c.jpeg",
+      "local_path": "assets/E4588043-5ED5-458F-BE36-A260C24A89D9_4_5005_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/images/praia-solar/vox-beach-run-01.jpeg",
+      "asset_type": "image",
+      "status": "approved",
+      "scene_slug": "praia-solar",
+      "width": 400,
+      "height": 360,
+      "checksum": "a4827b0274c24003d27e13b003a9387f73e0b612917042983b1313dd5fa771a0",
+      "tags": ["vox", "praia-solar", "beach", "running", "pink-cap", "athletic"],
+      "notes": "Athletic beach-motion reference reinforcing Praia Solar."
+    },
+    {
+      "local_filename": "6FCD7E49-127C-4866-94B8-F171D622D20F_4_5005_c.jpeg",
+      "local_path": "assets/6FCD7E49-127C-4866-94B8-F171D622D20F_4_5005_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/references/vox-turnaround-cap-01.jpeg",
+      "asset_type": "reference",
+      "status": "approved",
+      "scene_slug": null,
+      "width": 400,
+      "height": 360,
+      "checksum": "990a2ab7af0a5575c13a4551ed282c4a8b3919391d3860b036624dab546278ee",
+      "tags": ["vox", "turnaround", "pink-cap", "portrait-sheet", "reference"],
+      "notes": "Useful as a turnaround/reference sheet for face shape, cap, and expressions."
+    },
+    {
+      "local_filename": "02124318-C788-42BB-BD1E-65E7A8635DF7_1_105_c.jpeg",
+      "local_path": "assets/02124318-C788-42BB-BD1E-65E7A8635DF7_1_105_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/references/brand/voulezvous-logo-black-pink-01.jpeg",
+      "asset_type": "reference",
+      "status": "approved",
+      "scene_slug": null,
+      "width": 936,
+      "height": 840,
+      "checksum": "59606ff9e71600496a6151a28e44f4757a0285ac2ba5988683613e968b943d59",
+      "tags": ["voulezvous", "logo", "brand", "black-background", "pink"],
+      "notes": "Clean brand mark variant on dark background."
+    },
+    {
+      "local_filename": "23A01D2B-4C68-42D8-A5FE-22D6D75D4C67_1_105_c.jpeg",
+      "local_path": "assets/23A01D2B-4C68-42D8-A5FE-22D6D75D4C67_1_105_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/references/brand/voulezvous-logo-neon-pink-01.jpeg",
+      "asset_type": "reference",
+      "status": "approved",
+      "scene_slug": null,
+      "width": 936,
+      "height": 840,
+      "checksum": "902d2f0d42d8b42198d7c7a317d5a521c1368eef33f97f77b8315a1b4d02350a",
+      "tags": ["voulezvous", "logo", "brand", "neon", "pink"],
+      "notes": "Glow/neon version for moodboards and branded environments."
+    },
+    {
+      "local_filename": "3F216654-6647-4E6A-B34E-E616E64E8EAC_1_105_c.jpeg",
+      "local_path": "assets/3F216654-6647-4E6A-B34E-E616E64E8EAC_1_105_c.jpeg",
+      "storage_path": "workspaces/voulezvous/characters/vox/references/brand/voulezvous-logo-white-pink-01.jpeg",
+      "asset_type": "reference",
+      "status": "approved",
+      "scene_slug": null,
+      "width": 938,
+      "height": 835,
+      "checksum": "782a0ab5ea30ae81ded50943a8ec9b6c38bab350e30d6fc41fc7e9f9cd8cf61c",
+      "tags": ["voulezvous", "logo", "brand", "white-background", "pink"],
+      "notes": "Clean light-background logo reference."
+    }
+  ]
+}
+

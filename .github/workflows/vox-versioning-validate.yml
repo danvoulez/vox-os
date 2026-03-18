@@ -1,0 +1,50 @@
+name: Vox Versioning Validate
+
+on:
+  push:
+    branches:
+      - main
+      - "codex/**"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate canon JSON files
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          canon_dir = Path("docs/canon")
+          files = sorted(canon_dir.glob("*.json"))
+          if not files:
+              raise SystemExit("No canon JSON files found in docs/canon")
+
+          for path in files:
+              with path.open("r", encoding="utf-8") as handle:
+                  json.load(handle)
+              print(f"validated {path}")
+          PY
+
+      - name: Validate official bootstrap files
+        run: |
+          test -f docs/bootstrap.sql
+          test -f docs/assets-bootstrap.sql
+          test -f docs/bootstrap-validate.sql
+          test -f docs/bootstrap-official.md
+          grep -q "Vox v1 - Primeira Instancia Canonica" docs/bootstrap.sql
+          grep -q "assets.bootstrap.vox_v1_curated" docs/assets-bootstrap.sql
+
+      - name: Validate versioning directories
+        run: |
+          test -d canon
+          test -d commits
+          test -d reports
+

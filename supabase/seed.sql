@@ -1,0 +1,2 @@
+-- Optional local seed scaffold.
+-- Keep production bootstrap explicit; do not rely on this file for canonical data.
